@@ -36,7 +36,7 @@ variable "instance_name_prefix" {
 }
 
 # EC2 Instances
-resource "aws_instance" "instance" {
+resource "aws_instance" "instance1" {
   count                       = var.instance_count
   instance_type               = var.instance_type
   ami                         = var.ami_id
